@@ -1,54 +1,41 @@
 // my grunt file
-
+// http://gruntjs.com/getting-started
 
 module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    // uglify: {
-    //   options: {
-    //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-    //   },
-    //   build: {
-    //     src: 'src/<%= pkg.name %>.js',
-    //     dest: 'build/<%= pkg.name %>.min.js'
-    //   }
-    // }
+
+    // config less command
     less: {
-      development: {
+      development: { // this is a target ?!
         options: {
-          // paths: ["less"] // not sure how this is working
+          paths: ["less"] // this is an option called paths
         },
         files: {
-          "bitstarter.css": "less/main.less" // "path/to/result.css": "path/to/source.less"
-        }
-      },
-      production: {
-        options: {
-          paths: ["assets/css"],
-          cleancss: true,
-          modifyVars: {
-            // imgPath: '"http://mycdn.com/path/to/images"',
-            bgColor: 'red'
-          }
-        },
-        files: {
-          "path/to/result.css": "path/to/source.less"
+          "css/result.css": "less/main.less"
         }
       }
-    }
+    },
+
+    // config watch command 
+    watch: {
+      files: ['less/*.less'],
+      tasks: ['less']
+    }    
   });
 
   // // Load the plugin that provides the "uglify" task.
   // grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  // Load the plugin that provides the "LESS compilation" task.
+  // Load the plugin that provides the less, watch, and cssmin tasks.
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+
 
   // Default task(s).
-  // grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('default', ['less']); // just assuming I need this
+  grunt.registerTask('default', ['less']); // this specifies less as one of the default tasks
 
 };
-
