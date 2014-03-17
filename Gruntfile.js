@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           paths: ["less"] // this is an option called paths
         },
         files: {
-          "css/theme.css": "less/main.less"
+          "css/theme.css": "less/theme.less"
         }
       }
     },
@@ -22,8 +22,11 @@ module.exports = function(grunt) {
     // config watch command 
     watch: {
       files: ['less/*.less'],
-      tasks: ['less']
-    }    
+      tasks: ['less'],
+      options: {
+        livereload: true,
+      }
+    }
   });
 
   // // Load the plugin that provides the "uglify" task.

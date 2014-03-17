@@ -13,57 +13,12 @@
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700,300,600' rel='stylesheet' type='text/css'>
   <style type="text/css">
-
-    /* large desktop */
-    @media (min-width: 980px) {
-      body {
-        padding-top: 60px;
-      }
-      .linediv-l {
-        border-right: 1px white solid;
-      }
-      .linediv-r: {
-        border-left: 1px white solid;
-      }
-    }
-
-    /* old stuff */
-    body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-    }
-    .container {
-      width: 960px;
-    }
-    p.lead { /* .lead  is a TWBS tag to remove */
-      padding-top: 15px;
-    }
-    .navigation, .pitch, .section1, .section2, .faq, .footer {
-      padding: 10px 0px 10px 0px;
-    }
-    .heading, .video, .thermometer, .order, .social {
-      border: 1px dotted;
-      text-align: center;
-    }
-    .video {
-      /* Internal borders have 1px width, thus need to add 4x1px to 120px. */
-      /*height: 124px;*/
-      /*line-height: 124px;*/
-    }
-    .thermometer, .order, .social {
-      /* line height to vertically cente: http://phrogz.net/css/vertical-align/index.html */
-      height: 40px;
-      line-height: 40px;
-    }
-    div.row {
-      border: 1px solid;
-    }
   </style>
 </head>
 
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+  <div class="navigation" role="navigation"> <!-- bsfree -->
+    <div class="navigation-container"> <!-- bsfree -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -84,12 +39,12 @@
   </div>
 
   <div class="container"> <!-- use fluid or no??? -->
-    <div class="row heading">
-      <div class="col-md-12 title">
-        <h1>Product</h1>
+    <div class="heading"> <!-- bsfree -->
+      <div class="title"> <!-- bsfree -->
+        <h1>Product</h1> <!-- bsfree -->
       </div>
-      <div class="col-md-12 subtitle">
-        <p class="lead">Subtitle about the product</p>
+      <div class="subtitle">
+        <p>Subtitle about the product</p>
       </div>
     </div>
     <div class="row pitch">
@@ -202,5 +157,5 @@
   <!-- Scripts at bottom to load faster -->
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-</body>
+  <script src="//localhost:35729/livereload.js"></script>
 </html>
