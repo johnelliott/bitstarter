@@ -1,8 +1,26 @@
+// globals
+img {
+	.img-responsive;
+}
+
+// columns
+
+.title, .subtitle, .order, .social, .faq, .license {
+	.make-md-column(12);
+}
+
+.video, .actions, .image, .copy{ 
+	.make-md-column(6);
+}
+
+.backers, .percent, .timeleft {
+	.make-md-column(4);
+}
 
 // navigation
 .navigation {
 	.navbar;
-	.navbar-inverse;
+	.navbar-default;
 	.navbar-fixed-top;
 }
 
@@ -10,16 +28,60 @@
 	.container-fluid;
 }
 
-.heading {
-	.row;
+
+// blocks
+
+.image, .video {
+	border: 1px solid;
+	padding: 2px;
+	
 }
 
-.title, .subtitle {
-	.make-md-column(12);
+.heading, .pitch, .statistics, .footer {
+	.row;
 }
 
 .subtitle{
 	p {
 		.lead;
+	}
+}
+
+.title, .subtitle, .actions {
+	.text-center;
+}
+
+.thermometer {
+	.progress;
+	.bar {
+		.progress-bar;
+	}
+	.funded {
+		.bar;
+		.progress-bar-success;
+	}
+	.remaining {
+		.bar;
+		.progress-bar-warning;
+	}
+}
+
+.actions {
+	.panel;
+	.panel-default;
+}
+
+.order, .social {
+		button {
+		.btn;
+	}
+	.cart {
+		.btn-success;
+	}
+	.facebook {
+		.btn-primary;
+	}
+	.twitter {
+		.btn-info;
 	}
 }
