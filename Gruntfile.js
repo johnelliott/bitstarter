@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           paths: ["less"] // this is an option called paths
         },
         files: {
-          "css/result.css": "less/main.less"
+          "css/theme.css": "less/main.less"
         }
       }
     },
