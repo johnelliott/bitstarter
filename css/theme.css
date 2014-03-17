@@ -6249,11 +6249,6 @@ fieldset[disabled] .navigation .btn-link:focus {
     margin-left: 0;
   }
 }
-.image,
-.video {
-  border: 1px solid;
-  padding: 2px;
-}
 .heading,
 .pitch,
 .statistics,
@@ -6804,5 +6799,5 @@ body {
 .image,
 .video {
   border: 1px solid #eeeeee;
-  padding: 2px;
+  padding: 3px;
 }
