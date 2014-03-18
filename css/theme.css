@@ -6077,6 +6077,8 @@ img {
 .actions,
 .image,
 .copy {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -6094,12 +6096,14 @@ img {
 .backers,
 .percent,
 .timeleft {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .backers,
   .percent,
   .timeleft {
@@ -6784,13 +6788,15 @@ fieldset[disabled] .social .twitter.active {
   background-color: #ffffff;
 }
 .container {
-  width: 960px;
+  width: 970px;
 }
 body {
   padding-top: 70px;
 }
 .actions {
   padding: 1.3em;
+  background: #333333;
+  color: #eeeeee;
 }
 .order,
 .social {
@@ -6800,4 +6806,7 @@ body {
 .video {
   border: 1px solid #eeeeee;
   padding: 3px;
+}
+.pitch {
+  margin: 1em 0 1em 0;
 }

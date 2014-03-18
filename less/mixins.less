@@ -9,12 +9,15 @@ img {
 	.make-md-column(12);
 }
 
-.video, .actions, .image, .copy{ 
+.video, .actions, .image, .copy { 
+	.make-xs-column(12);
 	.make-md-column(6);
 }
 
 .backers, .percent, .timeleft {
-	.make-md-column(4);
+	.make-xs-column(12);
+	.make-sm-column(4);
+
 }
 
 // navigation
@@ -32,8 +35,15 @@ img {
 // blocks
 
 .heading, .pitch, .statistics, .footer {
-	.row;
+	.make-row();
 }
+
+// .pitch {
+// 	div{
+
+// 	}
+// }
+
 
 .subtitle{
 	p {
@@ -79,3 +89,4 @@ img {
 		.btn-info;
 	}
 }
+
