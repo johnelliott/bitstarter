@@ -5775,7 +5775,9 @@ button.close {
 .statistics:before,
 .statistics:after,
 .footer:before,
-.footer:after {
+.footer:after,
+.wrapper:before,
+.wrapper:after {
   content: " ";
   display: table;
 }
@@ -5799,7 +5801,8 @@ button.close {
 .heading:after,
 .pitch:after,
 .statistics:after,
-.footer:after {
+.footer:after,
+.wrapper:after {
   clear: both;
 }
 .center-block {
@@ -6062,7 +6065,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .title,
   .subtitle,
   .order,
@@ -6084,7 +6087,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .video,
   .actions,
   .image,
@@ -6259,6 +6262,24 @@ fieldset[disabled] .navigation .btn-link:focus {
 .footer {
   margin-left: -15px;
   margin-right: -15px;
+}
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrapper > .navbar-header,
+.wrapper > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .wrapper > .navbar-header,
+  .wrapper > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .subtitle p {
   margin-bottom: 20px;
@@ -6787,16 +6808,19 @@ fieldset[disabled] .social .twitter.active {
   color: #5bc0de;
   background-color: #ffffff;
 }
-.container {
-  width: 970px;
+.wrapper {
+  max-width: 1200px;
+}
+.faq {
+  max-width: 768px;
 }
 body {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .actions {
   padding: 1.3em;
-  background: #333333;
-  color: #eeeeee;
+  background: #eeeeee;
+  color: #333333;
 }
 .order,
 .social {

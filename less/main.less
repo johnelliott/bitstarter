@@ -4,18 +4,22 @@
 
 // Code from twitter bootstrap should go in mixins.less
 
-.container {
-	width: @container-desktop;
+.wrapper {
+	max-width: @screen-lg;
+}
+
+.faq {
+	max-width: @screen-sm;
 }
 
 body {
-	padding-top: 70px;
+	padding-top: 100px;
 }
 
 .actions {
 	padding: 1.3em;
-	background: @gray-dark;
-	color: @gray-lighter;
+	background: @gray-lighter;
+	color: @gray-dark;
 }
 
 .order, .social {
