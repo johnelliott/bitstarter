@@ -6811,9 +6811,6 @@ fieldset[disabled] .social .twitter.active {
 .wrapper {
   max-width: 1200px;
 }
-.faq {
-  max-width: 768px;
-}
 body {
   padding-top: 100px;
 }
@@ -6833,4 +6830,8 @@ body {
 }
 .pitch {
   margin: 1em 0 1em 0;
+  text-align: justify;
+}
+.pitch .copy {
+  padding: 0 1.2em 0 1.2em;
 }
